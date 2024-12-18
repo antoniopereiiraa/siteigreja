@@ -1,0 +1,130 @@
+/* Estilos Gerais */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho (Header) */
+header {
+    background-color: #f0f0f0;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu de Navegação */
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Ícone Hambúrguer */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        display: none;
+        border-top: 2px solid #ccc;
+        padding: 1rem 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Seções do Site */
+section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#inicio {
+    background-image: url("img/imagem_igreja.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 8rem 1rem;
+}
+
+#sobre {
+    background-color: #f9f9f9;
+}
+
+#missas {
+    background-color: #fff;
+}
+
+#pastoral {
+    background-color: #f0f0f0;
+}
+
+#galeria {
+    background-color: #f9f9f9;
+}
+
+#contato {
+    background-color: #fff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsividade Geral */
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 1rem;
+    }
+
+    #inicio {
+        padding: 6rem 1rem;
+    }
+}
